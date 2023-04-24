@@ -9,7 +9,7 @@
   justify-content: space-between;
   margin: 0 3rem;
   border: solid 1px black;
-  padding: 0 1rem;  
+  padding: 0 1rem;
 }
 
 .header ul {
@@ -17,7 +17,7 @@
   gap: 1rem;
 }
 
-.header ul li { 
+.header ul li {
   text-decoration: none;
   list-style: none;
 }
