@@ -18,24 +18,18 @@ function displayBooks() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const title = document.getElementById('bookTitle').value;
   const author = document.getElementById('authorName').value;
-
   const newBook = { title, author };
   books.push(newBook);
-
   localStorage.setItem('books', JSON.stringify(books));
-
   form.reset();
-
   displayBooks();
 });
 
 bookList.addEventListener('click', (event) => {
   if (event.target.classList.contains('removeBtn')) {
     const { index } = event.target.dataset;
-
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
     displayBooks();
