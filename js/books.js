@@ -8,10 +8,12 @@ const form = document.querySelector('form');
 const bookList = document.getElementById('bookList');
 
 function displayBooks() {
+  bookList.className = 'bookList';
   bookList.innerHTML = '';
   books.forEach((book, index) => {
     const li = document.createElement('li');
-    li.innerHTML = `${book.title} by ${book.author} <button class="removeBtn" data-index="${index}">Remove</button>`;
+    li.className = 'lineBook';
+    li.innerHTML = ` " ${book.title} " by ${book.author} <button class="removeBtn" data-index="${index}">Remove</button>`;
     bookList.appendChild(li);
   });
 }
