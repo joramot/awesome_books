@@ -26,11 +26,20 @@ class BookList {
     event.preventDefault();
     const title = document.getElementById('bookTitle').value;
     const author = document.getElementById('authorName').value;
-    const newBook = {title, author};
+    const newBook = { title, author };
     this.books.push(newBook);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.form.reset();
     this.displayBooks();
+  }
+
+  removeBook(event) {
+    if (event.target, classList.contains('removeBtn')) {
+      const { index } = event.target.dataset;
+      this.books.splice(index, 1);
+      localStorage.setItem('books', JSON.stringify(this.books));
+      this.displayBooks();
+    }
   }
 }
 
