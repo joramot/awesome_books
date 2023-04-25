@@ -1,11 +1,15 @@
-let books = [];
-
-if (localStorage.getItem('books')) {
-  books = JSON.parse(localStorage.getItem('books'));
-}
-
-const form = document.querySelector('form');
-const bookList = document.getElementById('bookList');
+class BookList {
+  constructor() {
+    this.books = [];
+    if (localStorage.getItem('books')) {
+      this.books = JSON.parse(localStorage.getItem('books'));
+    }
+    this.form = document.querySelector('form');
+    this.bookList = document.getElementById('bookList');
+    this.displayBooks();
+    this.form.addEventListener('submit', this.addBook.bind(this));
+    this.bookList.addEventListener('click', this.removeBook.bind(this));
+  }
 
 function displayBooks() {
   bookList.className = 'bookList';
