@@ -29,6 +29,7 @@
   gap: 1rem;
   border: solid 1px black;
   margin-top: 1rem;
+  padding: 1rem 0;
 }
 
 .add_new {
@@ -54,7 +55,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 0;
-  margin: o;
+  margin: 0;
 }
 
 .lineBook {
