@@ -12,13 +12,13 @@ class BookList {
   }
 
   displayBooks() {
-    bookList.className = 'bookList';
-    bookList.innerHTML = '';
-    books.forEach((book, index) => {
+    this.bookList.className = 'bookList';
+    this.bookList.innerHTML = '';
+    this.books.forEach((book, index) => {
       const li = document.createElement('li');
       li.className = 'lineBook';
       li.innerHTML = ` " ${book.title} " by ${book.author} <button class="removeBtn" data-index="${index}">Remove</button>`;
-      bookList.appendChild(li);
+      this.bookList.appendChild(li);
     });
   }
 
@@ -34,7 +34,7 @@ class BookList {
   }
 
   removeBook(event) {
-    if (event.target, classList.contains('removeBtn')) {
+    if (event.target.classList.contains('removeBtn')) {
       const { index } = event.target.dataset;
       this.books.splice(index, 1);
       localStorage.setItem('books', JSON.stringify(this.books));
@@ -42,3 +42,6 @@ class BookList {
     }
   }
 }
+
+const bookList = new BookList();
+bookList.init();
