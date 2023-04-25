@@ -21,6 +21,17 @@ class BookList {
       bookList.appendChild(li);
     });
   }
+
+  addBook(event) {
+    event.preventDefault();
+    const title = document.getElementById('bookTitle').value;
+    const author = document.getElementById('authorName').value;
+    const newBook = {title, author};
+    this.books.push(newBook);
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.form.reset();
+    this.displayBooks();
+  }
 }
 
 form.addEventListener('submit', (event) => {
