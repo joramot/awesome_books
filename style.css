@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+h2 {
+  text-align: center;
+}
+
+header {
+  border: solid 1px black;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   margin: 0 3rem;
-  border: solid 1px black;
   padding: 0 1rem;
 }
 
