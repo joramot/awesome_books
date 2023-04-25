@@ -42,14 +42,3 @@ class BookList {
     }
   }
 }
-
-bookList.addEventListener('click', (event) => {
-  if (event.target.classList.contains('removeBtn')) {
-    const { index } = event.target.dataset;
-    books.splice(index, 1);
-    localStorage.setItem('books', JSON.stringify(books));
-    displayBooks();
-  }
-});
-
-displayBooks();
