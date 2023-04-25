@@ -62,7 +62,5 @@
 .lineBook {
   display: flex;
   justify-content: space-between;
-  /* gap: 250vh; */
   width: 100%;
 }
-
