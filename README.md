@@ -72,6 +72,7 @@ After you're finished please remove all the comments and instructions!
 - HTML
 - CSS
 - Javascript
+- Local Storage
 - Visual Studio Code 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
