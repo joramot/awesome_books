@@ -45,3 +45,26 @@ class BookList {
 
 const bookList = new BookList();
 bookList.init();
+
+const navList = document.getElementById('menuList');
+const navAdd = document.getElementById('menuAdd');
+const navContact = document.getElementById('menuContact');
+const addBooks = document.querySelector('.add-book');
+const listBooks = document.querySelector('.list');
+const contactInfo = document.querySelector('.contact');
+
+navAdd.addEventListener('click', () => {
+  addBooks.style.display = 'flex';
+  listBooks.style.display = 'none';
+  contactInfo.style.display = 'none';
+});
+
+navList.addEventListener('click', () => {
+  window.location.reload();
+});
+
+navContact.addEventListener('click', () => {
+  contactInfo.style.display = 'flex';
+  listBooks.style.display = 'none';
+  addBooks.style.display = 'none';
+});

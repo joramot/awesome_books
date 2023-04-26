@@ -14,18 +14,20 @@
     <div class="header">
       <h1>Awsome Books</h1>
       <ul>
-        <li id="list">List</li>
-        <li id="add">Add_Book</li>
-        <li id="contact">Contact</li>
+        <li id="menuList"><a href="#">List</a></li>
+        <li id="menuAdd"><a href="#">Add_Book</a></li>
+        <li id="menuContact"><a href="#">Contact</a></li>
       </ul>
     </div>
   </header>
   <main>
-    <h2>All awesome books</h2>
-    <div id="displayList" class="list">
+
+    <div class="list">
+      <h2>All awesome books</h2>
       <ul id="bookList"></ul>
     </div>
-    <div id="add_new" class="add_new">
+
+    <div class="add-book">
       <h2>Add a new book</h2>
       <form>
         <div>
@@ -39,7 +41,20 @@
       </form>
     </div>
 
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <p>Do you have any question or you just want to say "Hello"?</p>
+      <p>You can reach out to use!</p>
+      <div>
+        <ul>
+          <li>Our email: mojica.raul@gmail.com</li>
+          <li>Our Phone number: +521122334455</li>
+          <li>Our Address: Veracruz, Ver. Mexico.</li>
+        </ul>
+      </div>
     </div>
+
+
     <p>Copyright</p>
   </main>
   <script src="./js/books.js"></script>
