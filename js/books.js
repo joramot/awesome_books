@@ -57,7 +57,6 @@ navAdd.addEventListener('click', () => {
   addBooks.style.display = 'flex';
   listBooks.style.display = 'none';
   contactInfo.style.display = 'none';
-
 });
 
 navList.addEventListener('click', () => {
@@ -69,3 +68,5 @@ navContact.addEventListener('click', () => {
   listBooks.style.display = 'none';
   addBooks.style.display = 'none';
 });
+
+bookList.init();
