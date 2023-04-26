@@ -44,7 +44,7 @@ class BookList {
   }
 }
 
-new BookList();
+BookList();
 
 const navList = document.querySelector('.menuList');
 const navAdd = document.querySelector('.menuAdd');
