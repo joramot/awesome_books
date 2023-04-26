@@ -43,8 +43,8 @@ class BookList {
     }
   }
 }
-
-BookList();
+// eslint-disable-next-line
+const bookList = new BookList();
 
 const navList = document.querySelector('.menuList');
 const navAdd = document.querySelector('.menuAdd');
