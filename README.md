@@ -81,7 +81,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( Comming soon!!!)
+- [Live Demo Link] [https://joramot.github.io/awesome_books/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ Clone the repository using git, and open it with visual studio code.
 Clone this repository to your desired folder:
 
   cd "your-folder"
-  git clone https://github.com/joramot/capstone_one_global_summit.git
+  git clone [https://github.com/joramot/awesome_books.git]
 
   git clone [git@github.com:[https://github.com/joramot/awesome_books.git]
 
@@ -137,9 +137,9 @@ You can deploy this project using visual studio code and Figma.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **comming soon**
-- [ ] **comming soon**
-- [ ] **comming soon**
+- [ ] **Show summary of the books.**
+- [ ] **Consult by theme.**
+- [ ] **Shopping cart.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
