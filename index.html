@@ -14,46 +14,31 @@
     <div class="header">
       <h1>Awsome Books</h1>
       <ul>
-        <li class="menuList"><a href="#">List</a></li>
-        <li class="menuAdd"><a href="#">Add_Book</a></li>
-        <li class="menuContact"><a href="#">Contact</a></li>
+        <li id="list">List</li>
+        <li id="add">Add New</li>
+        <li id="contact">Contact</li>
       </ul>
     </div>
   </header>
   <main>
-
-    <div class="list">
-      <h2>All awesome books</h2>
-      <ul id="bookList"></ul>
-    </div>
-
-    <div class="add-book">
+    <div id="add_new" class="add_new">
       <h2>Add a new book</h2>
-      <form class="form-book">
+      <form>
         <div>
-          <input type="text" id="bookTitle" required class="input" placeholder="Book Title"><br>
+          <label for="bookTitle">Book Title:</label>
+          <input type="text" id="bookTitle" required><br>
 
-          <input type="text" id="authorName" required class="input" placeholder="Author"><br>
-          <button type="submit" id="addBtn" class="input">Add Book</button>
+          <label for="authorName">Author Name:</label>
+          <input type="text" id="authorName" required><br>
         </div>
-
+        <button type="submit" id="addBtn">Add Book</button>
       </form>
     </div>
-
-    <div class="contact">
-      <h2>Contact Information</h2>
-      <p>Do you have any question or you just want to say "Hello"?</p>
-      <p>You can reach out to use!</p>
-      <div>
-        <ul>
-          <li>Our email: mojica.raul@gmail.com</li>
-          <li>Our Phone number: +521122334455</li>
-          <li>Our Address: Veracruz, Ver. Mexico.</li>
-        </ul>
-      </div>
+    <div id="list" class="list">
+      <!-- <h2>All awesome books</h2> -->
+      <ul id="bookList"></ul>
     </div>
-
-
+    </div>
     <p>Copyright</p>
   </main>
   <script src="./js/books.js"></script>
