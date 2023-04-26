@@ -42,6 +42,9 @@ header {
 .add-book {
   display: none;
   width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-book form {
@@ -69,6 +72,9 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  background-color: beige;
 }
 
 .contact {
@@ -80,4 +86,15 @@ header {
 
 .contact p {
   text-align: center;
+}
+
+.form-book {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.input {
+  height: 40px;
+  font-size: 20px;
 }
