@@ -44,7 +44,7 @@ class BookList {
   }
 }
 
-const bookList = new BookList();
+new BookList();
 
 const navList = document.querySelector('.menuList');
 const navAdd = document.querySelector('.menuAdd');
@@ -57,7 +57,6 @@ navAdd.addEventListener('click', () => {
   addBooks.style.display = 'flex';
   listBooks.style.display = 'none';
   contactInfo.style.display = 'none';
-
 });
 
 navList.addEventListener('click', () => {
