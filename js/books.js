@@ -31,7 +31,6 @@ class BookList {
     localStorage.setItem('books', JSON.stringify(this.books));
     this.form.reset();
     this.displayBooks();
-    window.location.reload();
   }
 
   removeBook(event) {
@@ -45,10 +44,11 @@ class BookList {
 }
 
 const bookList = new BookList();
+bookList.init();
 
-const navList = document.querySelector('.menuList');
-const navAdd = document.querySelector('.menuAdd');
-const navContact = document.querySelector('.menuContact');
+const navList = document.getElementById('menuList');
+const navAdd = document.getElementById('menuAdd');
+const navContact = document.getElementById('menuContact');
 const addBooks = document.querySelector('.add-book');
 const listBooks = document.querySelector('.list');
 const contactInfo = document.querySelector('.contact');
@@ -68,5 +68,3 @@ navContact.addEventListener('click', () => {
   listBooks.style.display = 'none';
   addBooks.style.display = 'none';
 });
-
-bookList.init();
